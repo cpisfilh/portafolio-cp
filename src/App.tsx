@@ -3,7 +3,7 @@ import AppLayout from "./components/AppLayout";
 
 function App() {
   return (
-    <div className="font-serif w-[80vw] h-[80vh] bg-slate-200 dark:bg-slate-800 rounded-2xl">
+    <div className="text-black dark:text-white font-serif w-[90vw] h-[90vh] bg-slate-200 border-slate-200 border-8 dark:border-8 dark:bg-black rounded-2xl p-2">
       <AppLayout />
     </div>
   );

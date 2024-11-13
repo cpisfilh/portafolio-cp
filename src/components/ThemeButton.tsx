@@ -1,11 +1,13 @@
 import { MoonStar, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useThemeStore } from "../stores/ThemeStore";
 
 const ThemeButton = () => {
-  const [theme, setTheme] = useState("light");
+  const { theme } = useThemeStore((state) => state);
+  const { toggleTheme } = useThemeStore((state) => state);
 
   const changeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    toggleTheme();
   };
 
   useEffect(() => {
@@ -16,11 +18,12 @@ const ThemeButton = () => {
     }
   }, [theme]);
   return (
-    <button
-      className="p-2 bg-slate-500 rounded-full hover:bg-slate-600"
-      onClick={changeTheme}
-    >
-      {theme === "light" ? <Sun color="white" /> : <MoonStar color="white" />}
+    <button className="p-2 rounded-full" onClick={changeTheme}>
+      {theme === "light" ? (
+        <Sun color="black" className="hover:w-8 h-8 transition-all" />
+      ) : (
+        <MoonStar color="white" className="hover:w-8 h-8 transition-all" />
+      )}
     </button>
   );
 };
