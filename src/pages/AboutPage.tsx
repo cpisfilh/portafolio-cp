@@ -1,6 +1,6 @@
 const AboutPage = () => {
   return (
-    <div className="flex flex-col gap-2 h-[90%]">
+    <div className="flex flex-col gap-2">
       <h1 className="font-semibold text-3xl">Sobre mi</h1>
       <p className="text-xl">
         Desarrollador web con más de 1 año de experiencia, mi objetivo es

@@ -1,4 +1,5 @@
 import "./App.css";
+import 'react-tooltip/dist/react-tooltip.css'
 import AppLayout from "./components/AppLayout";
 
 function App() {
