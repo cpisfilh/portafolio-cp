@@ -4,7 +4,7 @@ const SideCard = () => {
     <div className="flex flex-col items-center gap-5">
       <img
         src="/images/perfilkremin.jpg"
-        className="rounded-full border-8 border-black border-double dark:border-white mt-5"
+        className="rounded-full border-8 mt-5 border-black border-double dark:border-white"
         width={300}
         height={300}
         alt="cpisfilh"

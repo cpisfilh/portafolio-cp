@@ -6,3 +6,11 @@
   align-items: center;
   background: linear-gradient(to right, #0e7d90, #2f2f30);
 }
+
+
+@media (max-width: 1024px) {
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+}

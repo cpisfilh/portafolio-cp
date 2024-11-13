@@ -10,10 +10,10 @@ import SkillsPage from "../pages/SkillsPage";
 
 // Configuración de la animación mejorada
 const AnimationSettings = {
-  transition: { duration: 0.5},
+  transition: { duration: 0.5 },
   initial: { opacity: 0 },
-  animate: { opacity: 1 }, 
-  exit: { opacity: 0 },   
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
 };
 
 const AppLayout = () => {
@@ -21,6 +21,12 @@ const AppLayout = () => {
     <div className="flex flex-col lg:flex-row p-2">
       <div className="w-full lg:w-4/12 rounded-lg shadow-inner shadow-slate-500 dark:shadow-white">
         <SideCard />
+        <div className="lg:hidden mx-5 flex flex-col gap-5 mt-5">
+          <AboutPage />
+          <ProjectsPage />
+          <SkillsPage />
+          <ExperiencePage />
+        </div>
       </div>
       <div className="w-full lg:w-7/12 hidden lg:block">
         <div className="p-8">
@@ -34,7 +40,7 @@ const AppLayout = () => {
       <div className="w-full lg:w-1/12 hidden lg:block">
         <SideNav />
       </div>
-      <div className="absolute top-3 left-3">
+      <div className="absolute top-1 left-1">
         <ThemeButton />
       </div>
     </div>
