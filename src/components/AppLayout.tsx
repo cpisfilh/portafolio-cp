@@ -18,7 +18,7 @@ const AnimationSettings = {
 
 const AppLayout = () => {
   return (
-    <div className="flex flex-col lg:flex-row p-2">
+    <div className="flex flex-col lg:flex-row p-2 lg:h-full">
       <div className="w-full lg:w-4/12 rounded-lg shadow-inner shadow-slate-500 dark:shadow-white">
         <SideCard />
         <div className="lg:hidden mx-5 flex flex-col gap-5 mt-5">
